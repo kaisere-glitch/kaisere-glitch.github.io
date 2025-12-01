@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Your Name] | Portfolio</title>
+    <style>
+        /* CSS STYLES EMBEDDED HERE: Dark & Modern Theme */
+        :root {
+            --bg-main: #1a1a2e; /* Deep blue/black background */
+            --card-bg: #2a2a3e; /* Slightly lighter card background */
+            --text-color: #e0e0e0;
+            --accent-color: #0f3460;
+            --accent-hover: #e94560; /* Vibrant pink/red accent */
+            --shadow: rgba(0, 0, 0, 0.5);
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        h1, h2, h3 { color: white; }
+        a { text-decoration: none; transition: color 0.3s ease; }
 
+        /* Button styling */
+        .btn {
+            display: inline-block; padding: 12px 24px; margin: 10px 5px 0;
+            border-radius: 50px; font-weight: bold; transition: all 0.3s ease;
+            background-color: var(--accent-color); color: white;
+            box-shadow: 0 4px 10px var(--shadow);
+        }
+        .btn:hover {
+            background-color: var(--accent-hover); transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(233, 69, 96, 0.4);
+        }
+        .btn.secondary { background-color: var(--card-bg); color: var(--text-color); box-shadow: none; }
+        .btn.secondary:hover { background-color: var(--accent-color); color: white; }
+
+        /* Intro container styles */
+        .intro-container {
+            background: var(--card-bg); padding: 60px 40px; border-radius: 15px;
+            box-shadow: 0 10px 30px var(--shadow); max-width: 600px; width: 90%;
+            animation: fadeIn 1s ease-out; 
+        }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .bio { margin-top: 20px; margin-bottom: 30px; line-height: 1.6; }
+    </style>
+</head>
+<body>
+    <div class="intro-container">
+        <header>
+            <h1>Hi, I'm [Your Name]</h1>
+            <p>Welcome to my school project portfolio hosted on GitHub Pages.</p>
+        </header>
+        <section class="bio">
+            <p>I am a student at [Your School Name] specializing in [Your Major/Field]. This site showcases my academic projects and skills.</p>
+        </section>
+        <footer>
+            <!-- This button links to the projects page -->
+            <a href="projects.html" class="btn">View My Projects</a>
+            <a href="github.com" target="_blank" class="btn secondary">GitHub Profile</a>
+        </footer>
+    </div>
+</body>
+</html>
