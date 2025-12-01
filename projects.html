@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <style>
+        /* CSS STYLES EMBEDDED HERE (Matches Homepage Styling) */
+        :root {
+            --bg-main: #1a1a2e;
+            --card-bg: #2a2a3e;
+            --text-color: #e0e0e0;
+            --accent-color: #0f3460;
+            --accent-hover: #e94560;
+            --shadow: rgba(0, 0, 0, 0.5);
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        h1, h2, h3 { color: white; }
+        a { text-decoration: none; transition: color 0.3s ease; }
+        .btn {
+            display: inline-block; padding: 12px 24px; margin: 10px 5px 0;
+            border-radius: 50px; font-weight: bold; transition: all 0.3s ease;
+            background-color: var(--accent-color); color: white;
+            box-shadow: 0 4px 10px var(--shadow);
+        }
+        .btn:hover { background-color: var(--accent-hover); transform: translateY(-2px); }
+        .btn.secondary { background-color: var(--card-bg); color: var(--text-color); box-shadow: none; }
+        .btn.secondary:hover { background-color: var(--accent-color); color: white; }
+
+        /* Projects Page Layout */
+        .container {
+            max-width: 900px; margin: 40px auto; padding: 20px;
+            background-color: var(--card-bg); border-radius: 8px;
+            box-shadow: 0 4px 15px var(--shadow);
+        }
+        .project-card {
+            background: var(--bg-main); padding: 25px; margin-bottom: 25px;
+            border-radius: 8px; box-shadow: 0 4px 10px var(--shadow);
+            text-align: left; transition: transform 0.2s ease-in-out;
+        }
+        .project-card:hover { transform: scale(1.02); }
+        .project-card h2 { color: var(--accent-hover); }
+        .container footer { margin-top: 40px; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Academic Projects</h1>
+            <p>A collection of my work from various courses.</p>
+        </header>
+
+        <section class="project-list">
+            <!-- Project 1 Example: REPLACE WITH YOUR INFO -->
+            <div class="project-card">
+                <h2>Project Title 1: Python Data Analyzer</h2>
+                <p><strong>Technologies:</strong> Python, Pandas, Matplotlib</p>
+                <p>This project involved analyzing a large dataset to identify key trends and visualize the results. Key learning outcomes included data cleaning and manipulation techniques.</p>
+                <a href="github.com" target="_blank" class="btn secondary">View Code on GitHub</a>
+            </div>
+
+            <!-- Project 2 Example: REPLACE WITH YOUR INFO -->
+            <div class="project-card">
+                <h2>Project Title 2: Simple JavaScript Game</h2>
+                <p><strong>Technologies:</strong> HTML5, CSS3, JavaScript</p>
+                <p>A simple interactive game built as part of a Web Development course, focusing on DOM manipulation and event handling.</p>
+                <a href="github.com" target="_blank" class="btn secondary">View Code on GitHub</a>
+            </div>
+        </section>
+
+        <footer>
+            <!-- This button links back to the homepage -->
+            <a href="index.html" class="btn">← Back to Home</a>
+        </footer>
+    </div>
+</body>
+</html>
