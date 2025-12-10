@@ -2,15 +2,6 @@ import pygame
 import asyncio
 import random
 
-# Initialize Pygame
-pygame.init()
-play = "play.mp3"
-# Note: Music loaded here will only run once at script start. 
-# It might be better to manage music within the main function if you want it to restart on game reset.
-pygame.mixer.music.load(play)
-pygame.mixer.music.play(-1)
-
-
 # Window Constants
 WIDTH, HEIGHT = 600, 600
 CELL_SIZE = 25  # Size of one grid square
